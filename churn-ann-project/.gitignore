@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 models/*
 !models/.gitkeep
+!models/churn_ann.keras
+!models/preprocessor.joblib
+!models/metadata.json

@@ -1,0 +1,113 @@
+{
+  "threshold": 0.67,
+  "input_dim": 45,
+  "feature_names": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "gender_Female",
+    "gender_Male",
+    "Partner_No",
+    "Partner_Yes",
+    "Dependents_No",
+    "Dependents_Yes",
+    "PhoneService_No",
+    "PhoneService_Yes",
+    "MultipleLines_No",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_DSL",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_Month-to-month",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaperlessBilling_No",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Bank transfer (automatic)",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check",
+    "SeniorCitizen"
+  ],
+  "hyperparameters": {
+    "epochs": 150,
+    "batch_size": 32,
+    "dropout": 0.3,
+    "l2": 0.0001,
+    "lr": 0.001
+  },
+  "epochs_run": 29,
+  "test_metrics_ann_tuned": {
+    "threshold": 0.67,
+    "accuracy": 0.7849538679914834,
+    "precision": 0.5863746958637469,
+    "recall": 0.6443850267379679,
+    "f1": 0.6140127388535032,
+    "roc_auc": 0.8359012116045365,
+    "confusion_matrix": [
+      [
+        865,
+        170
+      ],
+      [
+        133,
+        241
+      ]
+    ]
+  },
+  "test_metrics_ann_default": {
+    "threshold": 0.5,
+    "accuracy": 0.7444996451383961,
+    "precision": 0.5123239436619719,
+    "recall": 0.7780748663101604,
+    "f1": 0.6178343949044586,
+    "roc_auc": 0.8359012116045365,
+    "confusion_matrix": [
+      [
+        758,
+        277
+      ],
+      [
+        83,
+        291
+      ]
+    ]
+  },
+  "test_metrics_baseline": {
+    "threshold": 0.5,
+    "accuracy": 0.7409510290986515,
+    "precision": 0.5077452667814114,
+    "recall": 0.7887700534759359,
+    "f1": 0.6178010471204188,
+    "roc_auc": 0.8420961533493503,
+    "confusion_matrix": [
+      [
+        749,
+        286
+      ],
+      [
+        79,
+        295
+      ]
+    ]
+  }
+}
